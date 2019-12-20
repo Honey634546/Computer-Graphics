@@ -1,0 +1,4 @@
+﻿  OrthographicCamera.cpp
+D:\CG\ray\Assignment2\OrthographicCamera.cpp(16,39): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CG\ray\Assignment2\OrthographicCamera.cpp(16,79): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Assignment2.vcxproj -> D:\CG\ray\Assignment2\Debug\Assignment2.exe
