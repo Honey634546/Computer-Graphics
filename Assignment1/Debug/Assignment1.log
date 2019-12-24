@@ -1,0 +1,3 @@
+﻿  ifs.cpp
+D:\计算机图形学\ray\Assignment1\ifs.cpp(22,21): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  Assignment1.vcxproj -> D:\计算机图形学\ray\Assignment1\Debug\Assignment1.exe
