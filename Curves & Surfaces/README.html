@@ -1,0 +1,571 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\46219\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.0\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%E6%9B%B2%E7%BA%BF%E5%92%8C%E6%9B%B2%E9%9D%A2curves-surfaces">&#x66F2;&#x7EBF;&#x548C;&#x66F2;&#x9762;Curves &amp; Surfaces</h1>
+
+<h2 class="mume-header" id="%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E6%8F%8F%E8%BF%B0">&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x63CF;&#x8FF0;</h2>
+
+<pre data-role="codeBlock" data-info class="language-"><code>&#x2502;  curve_editor.exe
+&#x2502;  list.txt
+&#x2502;  raytracer.exe
+&#x2502;  README.md
+&#x2502;  start.bat
+&#x2502;  
+&#x251C;&#x2500;code
+&#x2502;      arg_parser.h
+&#x2502;      BezierCurve.cpp
+&#x2502;      BezierCurve.h
+&#x2502;      BezierPatch.cpp
+&#x2502;      BezierPatch.h
+&#x2502;      BSplineCurve.cpp
+&#x2502;      BSplineCurve.h
+&#x2502;      Curve.cpp
+&#x2502;      Curve.h
+&#x2502;      glCanvas.cpp
+&#x2502;      glCanvas.h
+&#x2502;      main.cpp
+&#x2502;      matrix.cpp
+&#x2502;      matrix.h
+&#x2502;      Spline.cpp
+&#x2502;      Spline.h
+&#x2502;      spline_parser.cpp
+&#x2502;      spline_parser.h
+&#x2502;      Surface.cpp
+&#x2502;      Surface.h
+&#x2502;      SurfaceOfRevolution.cpp
+&#x2502;      SurfaceOfRevolution.h
+&#x2502;      triangle_mesh.cpp
+&#x2502;      triangle_mesh.h
+&#x2502;      vectors.h
+&#x2502;      work2.cpp
+&#x2502;      
+&#x251C;&#x2500;image
+&#x2502;      error.png
+&#x2502;      image01.png
+&#x2502;      image02.png
+&#x2502;      image03.png
+&#x2502;      image04.png
+&#x2502;      image05.png
+&#x2502;      image06.png
+&#x2502;      image07.png
+&#x2502;      image08.png
+&#x2502;      image09.png
+&#x2502;      image10.png
+&#x2502;      image11.png
+&#x2502;      image12.png
+&#x2502;      patch_high.png
+&#x2502;      patch_low.png
+&#x2502;      patch_med.png
+&#x2502;      teapot_high.png
+&#x2502;      teapot_low.png
+&#x2502;      torus_high.png
+&#x2502;      torus_low.png
+&#x2502;      vase_high.png
+&#x2502;      vase_low.png
+&#x2502;      vase_very_high.png
+&#x2502;      
+&#x251C;&#x2500;input
+&#x2502;      spline01_bezier.txt
+&#x2502;      spline02_bspline.txt
+&#x2502;      spline03_bezier.txt
+&#x2502;      spline04_bspline.txt
+&#x2502;      spline05_bspline_dups.txt
+&#x2502;      spline06_torus.txt
+&#x2502;      spline07_vase.txt
+&#x2502;      spline08_bezier_patch.txt
+&#x2502;      spline09_teapot.txt
+&#x2502;      
+&#x2514;&#x2500;output
+        output01_bezier.txt
+        output01_bspline.txt
+        output02_bezier.txt
+        output02_bspline.txt
+        output07_edit.txt
+        patch_high.obj
+        patch_low.obj
+        patch_med.obj
+        teapot_high.obj
+        teapot_low.obj
+        torus_high.obj
+        torus_low.obj
+        vase_high.obj
+        vase_low.obj
+        vase_very_high.obj
+</code></pre><h2 class="mume-header" id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">&#x5FEB;&#x901F;&#x5F00;&#x59CB;</h2>
+
+<h3 class="mume-header" id="%E7%8E%AF%E5%A2%83%E9%9C%80%E6%B1%82">&#x73AF;&#x5883;&#x9700;&#x6C42;</h3>
+
+<p>&#x9700;&#x8981;glut32.dll</p>
+<p>&#x786E;&#x4FDD;glut32.dll&#x5728;&#x73AF;&#x5883;&#x8DEF;&#x5F84;&#x4E2D;&#xFF08;&#x5BF9;&#x4E8E;64&#x4F4D;&#x4E00;&#x822C;&#x5728;C:\Windows\SysWOW64\&#x4E2D;&#xFF09;</p>
+<p>&#x5982;&#x679C;&#x7248;&#x672C;&#x4E0D;&#x540C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x5931;&#x8D25;</p>
+<h3 class="mume-header" id="%E5%BC%80%E5%A7%8B">&#x5F00;&#x59CB;</h3>
+
+<p>&#x8FD0;&#x884C; start.bat</p>
+<p>&#x7531;&#x4E8E;&#x73AF;&#x5883;&#x539F;&#x56E0;&#xFF0C;&#x5728;&#x6211;&#x7684;&#x7535;&#x8111;&#x4E0A;raytracer&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x5B9E;&#x9645;&#x9700;&#x8981;raytracer&#x7684;&#x90E8;&#x5206;&#x4F7F;&#x7528;3D&#x67E5;&#x770B;&#x5668;&#x5B8C;&#x6210;</p>
+<h2 class="mume-header" id="%E4%B8%8E%E5%85%B6%E4%BB%96%E5%90%8C%E5%AD%A6%E8%AE%A8%E8%AE%BA%E4%B8%8E%E5%90%88%E4%BD%9C">&#x4E0E;&#x5176;&#x4ED6;&#x540C;&#x5B66;&#x8BA8;&#x8BBA;&#x4E0E;&#x5408;&#x4F5C;</h2>
+
+<p>&#x65E0;</p>
+<h2 class="mume-header" id="%E7%89%B9%E5%88%AB%E6%9C%89%E5%8A%A9%E4%BA%8E%E4%BD%A0%E5%AE%8C%E6%88%90%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">&#x7279;&#x522B;&#x6709;&#x52A9;&#x4E8E;&#x4F60;&#x5B8C;&#x6210;&#x4F5C;&#x4E1A;&#x7684;&#x53C2;&#x8003;&#x8D44;&#x6599;</h2>
+
+<p>&#x8BA1;&#x7B97;&#x673A;&#x56FE;&#x5F62;&#x5B66; [(&#x7F8E;)Peter Shirley&#x7B49;&#x8457; &#x9AD8;&#x6625;&#x6653;&#xFF0C;&#x8D75;&#x6E05;&#x6770;&#xFF0C;&#x5F20;&#x6587;&#x8000;&#x8BD1;][&#x4EBA;&#x6C11;&#x90AE;&#x7535;&#x51FA;&#x7248;&#x793E;][2007][409&#x9875;][11840287]</p>
+<h2 class="mume-header" id="%E5%B7%B2%E7%9F%A5%E9%97%AE%E9%A2%98">&#x5DF2;&#x77E5;&#x95EE;&#x9898;</h2>
+
+<p>&#x65E0;</p>
+<h2 class="mume-header" id="%E9%99%84%E5%8A%A0%E9%A2%98">&#x9644;&#x52A0;&#x9898;</h2>
+
+<p>&#x65E0;</p>
+<h2 class="mume-header" id="%E6%84%8F%E8%A7%81">&#x610F;&#x89C1;</h2>
+
+<p>&#x65E0;</p>
+<h2 class="mume-header" id="%E9%83%A8%E5%88%86%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81">&#x90E8;&#x5206;&#x6838;&#x5FC3;&#x4EE3;&#x7801;</h2>
+
+<p>Bspline&#x8F93;&#x51FA;Bezier</p>
+<pre data-role="codeBlock" data-info="(c++)" class="language-(c++)"><code>void BSplineCurve::OutputBezier(FILE* file)
+{
+	float Be[16] = { -1,3,-3,1,3,-6,3,0,-3,3,0,0,1,0,0,0 };
+	float Bs[16] = { -1,3,-3,1,3,-6,0,4,-3,3,3,1,1,0,0,0 };
+	for (int i = 0; i &lt; 16; i++)
+	{
+		Bs[i] /= 6;
+	}
+	Matrix Bezier(Be);
+	Matrix BSpline(Bs);
+	float G1[16] = { vArr[0].x(),vArr[1].x(),vArr[2].x(),vArr[3].x(),vArr[0].y(),vArr[1].y(),vArr[2].y(),vArr[3].y(),0,0,0,0,0,0,0,0 };
+	Matrix Geometry(G1);
+	Matrix G2;
+	if (Bezier.Inverse())
+	{
+		G2 = Geometry * BSpline * Bezier;
+	}
+	fprintf(file, &quot;bezier\n&quot;);
+	fprintf(file, &quot;num_vertices 4\n&quot;);
+	for (int i = 0; i &lt; 4; i++)
+	{
+		fprintf(file, &quot;%f %f 0\n&quot;, G2.Get(i, 0), G2.Get(i, 1));
+	}
+}
+</code></pre><p>Bezier&#x8F93;&#x51FA;Bspline</p>
+<pre data-role="codeBlock" data-info="(cpp)" class="language-(cpp)"><code>void BezierCurve::OutputBSpline(FILE* file)
+{
+	fprintf(file, &quot;bspline\n&quot;);
+	fprintf(file, &quot;num_vertices 4\n&quot;);
+	float Be[16] = { -1,3,-3,1,3,-6,3,0,-3,3,0,0,1,0,0,0 };
+	float Bs[16] = { -1,3,-3,1,3,-6,0,4,-3,3,3,1,1,0,0,0 };
+	for (int i = 0; i &lt; 16; i++)
+	{
+		Bs[i] /= 6;
+	}
+	Matrix Bezier(Be);
+	Matrix BSpline(Bs);
+	float G1[16] = { vArr[0].x(),vArr[1].x(),vArr[2].x(),vArr[3].x(),vArr[0].y(),vArr[1].y(),vArr[2].y(),vArr[3].y(),0,0,0,0,0,0,0,0 };
+	Matrix Geometry(G1);
+	Matrix G2;
+	if (BSpline.Inverse())
+	{
+		G2 = Geometry * Bezier * BSpline;
+	}
+	for (int i = 0; i &lt; 4; i++)
+	{
+		fprintf(file, &quot;%f %f 0\n&quot;, G2.Get(i, 0), G2.Get(i, 1));
+	}
+}
+</code></pre><p>&#x6DFB;&#x52A0;&#x63A7;&#x5236;&#x70B9;</p>
+<pre data-role="codeBlock" data-info="(cpp)" class="language-(cpp)"><code>void BSplineCurve::addControlPoint(int selectedPoint,float x,float y)
+{
+	Vec3f temp(x, y, 0);
+	vArr.insert(vArr.begin() + selectedPoint, temp);
+	num++;
+}
+</code></pre><p>&#x5220;&#x9664;&#x63A7;&#x5236;&#x70B9;</p>
+<pre data-role="codeBlock" data-info="(cpp)" class="language-(cpp)"><code>void BSplineCurve::deleteControlPoint(int selectedPoint)
+{
+	if (num &lt;= 4)
+	{
+		return;
+	}
+	vArr.erase(vArr.begin() + selectedPoint);
+	num--;
+	
+}
+</code></pre><p>&#x8F93;&#x51FA;&#x4E09;&#x89D2;&#x7F51;</p>
+<pre data-role="codeBlock" data-info class="language-"><code>TriangleMesh* BSplineCurve::OutputTriangles(ArgParser* arg)
+{
+	int curve_tessellation = arg-&gt;curve_tessellation;
+	int revolution_tessellation = arg-&gt;revolution_tessellation;
+	int cnum = curve_tessellation * (num-3)+1;
+	TriangleNet* tri = new TriangleNet(revolution_tessellation + 1, cnum - 1);
+
+	vector&lt;Vec3f&gt; arr;
+	Vec3f temp;
+	for (double j = 0; j &lt; vArr.size() - 3; j++)
+	{
+		for (double i = 0; i &lt;= curve_tessellation; i++)
+		{
+			double t = i / num;
+			double a1 = pow(1 - t, 3);
+			double a2 = 3 * t * t * t - 6 * t * t + 4;
+			double a3 = -3 * t * t * t + 3 * t * t + 3 * t + 1;
+			double a4 = t * t * t;
+			double x = a1 * vArr[j].x() + a2 * vArr[j + 1].x() + a3 * vArr[j + 2].x() + a4 * vArr[j + 3].x();
+			double y = a1 * vArr[j].y() + a2 * vArr[j + 1].y() + a3 * vArr[j + 2].y() + a4 * vArr[j + 3].y();
+			x /= 6;
+			y /= 6;
+			temp.Set(x, y, 0.0);
+			arr.push_back(temp);
+		}
+		arr.pop_back();
+	}
+	arr.push_back(temp);
+	for (int i = 0; i &lt; cnum; i++)
+	{
+		Vec3f t(arr[i].x(), arr[i].y(), arr[i].z());
+		for (int j = 0; j &lt;= revolution_tessellation + 1; j++)
+		{
+			double angle = 360.0 / revolution_tessellation / 180 * M_PI;
+			//float t1[16] = { t.x(),t.y(),t.z(),1,0,0,0,0,0,0,0,0,0,0,0,0 };
+			//float t2[16] = { cos(angle),0,-sin(angle),0,0,1,0,0,sin(angle),0,cos(angle),0,0,0,0,1 };
+
+			//Matrix temp1(t1);
+			//Matrix temp2(t2);
+			//Matrix temp3 = temp1 * temp2;
+			double x = t.x() * cos(angle) + t.z() * sin(angle);
+			double y = t.y();
+			double z = t.x() * -1.0 * sin(angle) + t.z() * cos(angle);
+			tri-&gt;SetVertex(j, i, t);
+			//t.Set(temp3.Get(0,0),temp3.Get(1,0),temp3.Get(2,0));
+			t.Set(x, y, z);
+		}
+	}
+	return tri;
+}
+</code></pre><h2 class="mume-header" id="%E7%A4%BA%E4%BE%8B%E8%BE%93%E5%87%BA">&#x793A;&#x4F8B;&#x8F93;&#x51FA;</h2>
+
+<p><strong>&#x8FD9;&#x91CC;&#x7684;&#x4E8B;&#x4F8B;&#x8F93;&#x5165;&#x9700;&#x8981;&#x6587;&#x4EF6;&#x5728;&#x540C;&#x4E00;&#x76EE;&#x5F55;&#x4E0B;&#x3002;</strong></p>
+<p>curve_editor -input spline01_bezier.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image01.png" alt="spline01_bezier"></p>
+<p>curve_editor -input spline02_bspline.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image02.png" alt="spline02_bspline"></p>
+<p>curve_editor -input output01_bezier.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image03.png" alt></p>
+<p>curve_editor -input output01_bspline.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image04.png" alt></p>
+<p>curve_editor -input output02_bezier.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image05.png" alt></p>
+<p>curve_editor -input output02_bspline.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image06.png" alt></p>
+<p>curve_editor -input spline03_bezier.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image07.png" alt></p>
+<p>curve_editor -input spline04_bspline.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image08.png" alt></p>
+<p>curve_editor -input spline05_bspline_dups.txt -gui -curve_tessellation 30</p>
+<p><img src="./image/image09.png" alt></p>
+<p>curve_editor -input spline06_torus.txt -curve_tessellation 4 -gui</p>
+<p><img src="image/image10.png" alt></p>
+<p>&#x7531;&#x4E8E;&#x6211;&#x7684;&#x73AF;&#x5883;&#x8FD0;&#x884C;&#x4E0D;&#x4E86;<strong>raytracer</strong>&#x4F1A;&#x62A5;&#x9519;</p>
+<p><img src="./image/error.png" alt="error"></p>
+<p>&#x6240;&#x4EE5;&#x90FD;&#x662F;&#x7528;win10&#x81EA;&#x5E26;&#x7684;<strong>3D&#x67E5;&#x770B;&#x5668;</strong>&#x67E5;&#x770B;&#x7684;</p>
+<p>torus_low.obj</p>
+<p><img src="./image/torus_low.png" alt="torus_low"></p>
+<p>torus_high.obj</p>
+<p><img src="image/torus_high.png" alt="torus_high"></p>
+<p>curve_editor -input spline07_vase.txt -curve_tessellation 4 -output_bspline output07_edit.txt -gui</p>
+<p><img src="image/image11.png" alt></p>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x52A0;&#x70B9;&#x62D6;&#x62FD;&#x6210;&#x4E00;&#x4E2A;&#x82B1;&#x74F6;&#x7684;&#x7EBF;&#xFF0C;&#x6211;&#x7531;&#x4E8E;&#x4E0A;&#x6B21;&#x6CA1;&#x6709;&#x4FDD;&#x5B58;&#x8FD9;&#x4E2A;&#x56FE;&#xFF0C;&#x5C31;&#x4E0D;&#x62D6;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x770B;obj&#x683C;&#x5F0F;&#x7684;&#x5427;&#x3002;&#x3002;&#x6709;&#x70B9;&#x624B;&#x6B8B;</p>
+<p>vase_low.obj</p>
+<p><img src="image/vase_low.png" alt="vase_low"></p>
+<p>vase_high.obj</p>
+<p><img src="image/vase_high.png" alt="vase_high"></p>
+<p>vase_very_high.obj</p>
+<p><img src="image/vase_very_high.png" alt="vase_very_high"></p>
+<p>patch_low.obj</p>
+<p><img src="image/patch_low.png" alt="patch_low"></p>
+<p>patch_med.obj</p>
+<p><img src="image/patch_med.png" alt="patch_med"></p>
+<p>patch_high.obj</p>
+<p><img src="image/patch_high.png" alt="patch_high"></p>
+<p>curve_editor -input spline09_teapot.txt -curve_tessellation 4 -gui</p>
+<p><img src="image/image12.png" alt></p>
+<p>teapot_low.obj</p>
+<p><img src="./image/teapot_low.png" alt="teapot_low"></p>
+<p>teapot_high.obj</p>
+<p><img src="./image/teapot_high.png" alt="teapot_high"></p>
+<p>&#x56E0;&#x4E3A;raytracer&#x7528;&#x4E0D;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x540E;&#x9762;&#x4E24;&#x4E2A;&#x56FE;&#x770B;&#x4E0D;&#x4E86;</p>
+<h2 class="mume-header" id="github%E5%9C%B0%E5%9D%80">github&#x5730;&#x5740;</h2>
+
+<p><a href="https://github.com/Honey634546/Computer-Graphics">https://github.com/Honey634546/Computer-Graphics</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

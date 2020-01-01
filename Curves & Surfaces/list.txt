@@ -1,0 +1,91 @@
+文件夹 PATH 列表
+卷序列号为 4C06-E1A0
+C:.
+│  curve_editor.exe
+│  list.txt
+│  raytracer.exe
+│  README.html
+│  README.md
+│  start.bat
+│  
+├─code
+│      arg_parser.h
+│      BezierCurve.cpp
+│      BezierCurve.h
+│      BezierPatch.cpp
+│      BezierPatch.h
+│      BSplineCurve.cpp
+│      BSplineCurve.h
+│      Curve.cpp
+│      Curve.h
+│      glCanvas.cpp
+│      glCanvas.h
+│      main.cpp
+│      matrix.cpp
+│      matrix.h
+│      Spline.cpp
+│      Spline.h
+│      spline_parser.cpp
+│      spline_parser.h
+│      Surface.cpp
+│      Surface.h
+│      SurfaceOfRevolution.cpp
+│      SurfaceOfRevolution.h
+│      triangle_mesh.cpp
+│      triangle_mesh.h
+│      vectors.h
+│      work2.cpp
+│      
+├─image
+│      error.png
+│      image01.png
+│      image02.png
+│      image03.png
+│      image04.png
+│      image05.png
+│      image06.png
+│      image07.png
+│      image08.png
+│      image09.png
+│      image10.png
+│      image11.png
+│      image12.png
+│      patch_high.png
+│      patch_low.png
+│      patch_med.png
+│      teapot_high.png
+│      teapot_low.png
+│      torus_high.png
+│      torus_low.png
+│      vase_high.png
+│      vase_low.png
+│      vase_very_high.png
+│      
+├─input
+│      spline01_bezier.txt
+│      spline02_bspline.txt
+│      spline03_bezier.txt
+│      spline04_bspline.txt
+│      spline05_bspline_dups.txt
+│      spline06_torus.txt
+│      spline07_vase.txt
+│      spline08_bezier_patch.txt
+│      spline09_teapot.txt
+│      
+└─output
+        output01_bezier.txt
+        output01_bspline.txt
+        output02_bezier.txt
+        output02_bspline.txt
+        output07_edit.txt
+        patch_high.obj
+        patch_low.obj
+        patch_med.obj
+        teapot_high.obj
+        teapot_low.obj
+        torus_high.obj
+        torus_low.obj
+        vase_high.obj
+        vase_low.obj
+        vase_very_high.obj
+        
