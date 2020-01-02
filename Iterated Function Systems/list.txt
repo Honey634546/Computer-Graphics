@@ -1,0 +1,63 @@
+文件夹 PATH 列表
+卷序列号为 4C06-E1A0
+C:.
+│  debug.log
+│  ifs.exe
+│  list.txt
+│  README.html
+│  README.md
+│  start.bat
+│  
+├─code
+│      ifs.cpp
+│      ifs.h
+│      image.cpp
+│      image.h
+│      main.cpp
+│      matrix.cpp
+│      matrix.h
+│      vectors.h
+│      
+├─image
+│      dragon.png
+│      fern.png
+│      giant_x.png
+│      sierpinski_triangle.png
+│      sierpinski_triangle_0.png
+│      sierpinski_triangle_1.png
+│      sierpinski_triangle_2.png
+│      sierpinski_triangle_3.png
+│      sierpinski_triangle_4.png
+│      
+├─input
+│      dragon.txt
+│      fern.txt
+│      giant_x.txt
+│      sierpinski_triangle.txt
+│      
+└─output
+        dragon.tga
+        dragon_0.tga
+        dragon_1.tga
+        dragon_2.tga
+        dragon_3.tga
+        dragon_4.tga
+        fern.tga
+        fern_0.tga
+        fern_1.tga
+        fern_2.tga
+        fern_3.tga
+        fern_4.tga
+        giant_x.tga
+        giant_x_0.tga
+        giant_x_1.tga
+        giant_x_2.tga
+        giant_x_3.tga
+        giant_x_4.tga
+        sierpinski_triangle.tga
+        sierpinski_triangle_0.tga
+        sierpinski_triangle_1.tga
+        sierpinski_triangle_2.tga
+        sierpinski_triangle_3.tga
+        sierpinski_triangle_4.tga
+        
