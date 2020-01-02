@@ -1,6 +1,6 @@
 # Computer-Graphics
 
-## [Mesh Viewer]()
+## [Mesh Viewer](https://github.com/Honey634546/Computer-Graphics/tree/master/Mesh%20Viewer)
 
 在本次作业中, 需要实现一个简单的3D格网显示。所编写的程序除了显示物体的模型外，还要能让用户改变光的位置和物体的颜色。
 
