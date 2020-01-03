@@ -149,7 +149,7 @@ bool Sphere::intersect(const Ray& r, Hit& h, float tmin)
 
 生成光线函数
 
-```(cpp)
+```cpp
 Ray OrthographicCamera::generateRay(Vec2f point) {
     Vec3f origin = center + (point.x() - 0.5) * size * horizontal + (point.y() - 0.5) * size * up;
     return Ray(origin, direction);
