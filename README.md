@@ -1,4 +1,4 @@
-a# Computer-Graphics
+# Computer-Graphics
 
 ## [Mesh Viewer](https://github.com/Honey634546/Computer-Graphics/tree/master/Mesh%20Viewer)
 
