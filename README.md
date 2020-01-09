@@ -14,6 +14,6 @@ The goal of this assignment is to get familiar with C++ and with two simple libr
 
 这项任务的目的是熟悉C ++以及两个我们将用于线性代数和图像的简单库。附带的目标还在于玩弄奇异的分形物体。IFS是自相似的分形：对象的一个子部分与整体相似。IFS的经典示例是Barnsley的蕨类植物，其中蕨类植物的每个子部分与整个蕨类植物完全相同。IFS通过一组仿射变换（旋转，平移，缩放，倾斜等）来描述。这些变换捕获对象的自相似性。IFS可以在任何维度上定义，但是我们将使用二维维度。形式上，IFS由n个仿射变换定义。每个转换˚F 我必须具有收缩性：点之间的距离必须减小。IFS 的吸引子是使A = U f i（A）的对象。A通过变换集保持不变：这是一个固定点。
 
-## [Ray Casting]https://github.com/Honey634546/Computer-Graphics/tree/master/Ray%20Casting
+## [Ray Casting](https://github.com/Honey634546/Computer-Graphics/tree/master/Ray%20Casting)
 
 In this assignment, you will implement a basic ray caster. This will be the basis of many future assignments, so proper code design is quite important. As seen in class, a ray caster sends a ray for each pixel and intersects it with all the objects in the scene. You will implement a ray caster for an orthographic camera (parallel rays) for sphere primitives. You will use a very basic shading model: the objects have a constant color. You will also implement a visualization mode to display the distance t of each pixel to the camera.
